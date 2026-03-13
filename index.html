@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artsok — Showcase Your Masterpiece</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+<div class="container nav-container">
+
+<div class="logo">Artsok</div>
+
+<nav id="navMenu">
+<a href="#about">About</a>
+<a href="#works">How it Works</a>
+<a href="#portfolio">Portfolio</a>
+<a href="https://wa.me/2348122269422?text=Hello, I am from your website">Contact</a>
+
+<a class="btn primary submit-btn" href="https://wa.me/2348122269422?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20artwork.">Submit Artwork</a>
+</nav>
+
+<!-- Hamburger -->
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-container">
+
+<h1>
+A place to showcase your
+<span>masterpiece</span>
+</h1>
+
+<p>
+Artists share their work, clients discover talent,
+and creativity gets the attention it deserves.
+</p>
+
+<div class="hero-buttons">
+  <a class="btn primary submit-btn" href="https://wa.me/2348122269422?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20artwork.">Get Started</a>
+<a class="btn secondary" href="#portfolio">Explore Art</a>
+</div>
+
+      <!-- Floating Images -->
+      <div class="floating-images">
+        <img src="img/0c2fc3bf1802d2044b480e7bd2cf28d4.jpg" class="fimg f1" alt="Art 1" />
+        <img src="img/712c00b202016d3ce1cd81379d2df609.jpg" class="fimg f2" alt="Art 2" />
+        <img src="img/73ae702959258eb2a9018c0a1cf45a48.jpg" class="fimg f3" alt="Art 3" />
+        <img src="img/bd9387bef57978d2eec18719e97a4621.jpg" class="fimg f4" alt="Art 4" />
+        <img src="img/hero1.jpg" class="fimg f5" alt="Art 5" />
+      </div>
+
+    </div>
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<div class="container about-container">
+
+<!-- TEXT SIDE -->
+
+<div class="about-text">
+
+<span class="badge">About Artsok</span>
+
+<h2>Where Creativity Meets Opportunity</h2>
+
+<p class="about-desc">
+Artsok is a platform designed to help creative talents showcase
+their masterpieces to the world. Artists, designers, and digital
+creators can display their work while clients and recruiters
+discover amazing talent.
+</p>
+
+<div class="about-features">
+
+<div class="feature">
+<i class="fa-solid fa-palette"></i>
+<div>
+<h4>Showcase Masterpieces</h4>
+<p>Display your best creative works.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-user-tie"></i>
+<div>
+<h4>Get Discovered</h4>
+<p>Recruiters and clients find your talent.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-handshake"></i>
+<div>
+<h4>Connect with Clients</h4>
+<p>Collaborate and get new opportunities.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMAGE SIDE -->
+
+<div class="about-image">
+
+<img src="img/about-art.jpg" alt="Artwork">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="works" class="works">
+
+<div class="container">
+
+<h2 class="section-title">How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<span class="step-number">01</span>
+<i class="fa-solid fa-phone"></i>
+<h3>Contact Admin</h3>
+<p>Send your artwork to be reviewed.</p>
+</div>
+
+<div class="step">
+<span class="step-number">02</span>
+<i class="fa-solid fa-upload"></i>
+<h3>Get Featured</h3>
+<p>Your project gets uploaded to Artsok.</p>
+</div>
+
+<div class="step">
+<span class="step-number">03</span>
+<i class="fa-solid fa-eye"></i>
+<h3>Get Discovered</h3>
+<p>Clients and recruiters discover your work.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="portfolio-grid">
+
+      <!-- ART CARD EXAMPLE -->
+      <div class="art-card">
+        <img src="img/art1.jpg" onclick="openModal(this.src, 'John Doe', 'https://wa.me/2348122269422')" alt="Creative Wall Design">
+        <div class="art-info">
+          <h4>Creative Wall Design</h4>
+          <p>By John</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+      <!-- Add more art cards -->
+      <div class="art-card">
+        <img src="img/art2.jpg" onclick="openModal(this.src, 'Juliet', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Concept Art</h4>
+          <p>By Juliet</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art12.jpg" onclick="openModal(this.src, 'Smith', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Digital Illustration</h4>
+          <p>By Smith</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art3.jpg" onclick="openModal(this.src, 'Precious', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Potrait Art</h4>
+          <p>By Precious</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art4.jpg" onclick="openModal(this.src, 'Mary', 'https://wa.me/2348122269422')" alt="Potrait Art">
+        <div class="art-info">
+          <h4>Potrait Art</h4>
+          <p>By Mary</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art5.jpg" onclick="openModal(this.src, 'Joseph', 'https://wa.me/2348122269422')" alt="Mural Art">
+        <div class="art-info">
+          <h4>Mural/Wall Art Design</h4>
+          <p>By Joseph</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art6.jpg" onclick="openModal(this.src, 'Kofi', 'https://wa.me/2348122269422')" alt="Portrait Art">
+        <div class="art-info">
+          <h4>Portrait Art</h4>
+          <p>By Kofi</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art7.jpg" onclick="openModal(this.src, 'Bello', 'https://wa.me/2348122269422')" alt="Portrait Art">
+        <div class="art-info">
+          <h4>Portrait Art</h4>
+          <p>By Bello</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+            <div class="art-card">
+        <img src="img/art 8.jpg" onclick="openModal(this.src, 'Rowan Atkinson', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Digital Illustration</h4>
+          <p>By Rowan Atkinson</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+        <div class="art-card">
+        <img src="img/art 9.jpg" onclick="openModal(this.src, 'Russo', 'https://wa.me/2348122269422    ')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Traditional Painting / Drawing</h4>
+          <p>By Russo</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+        <div class="art-card">
+        <img src="img/art10.jpg" onclick="openModal(this.src, 'Eliana', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Potrait Art</h4>
+          <p>By Eliana</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+
+        <div class="art-card">
+        <img src="img/art11.jpg" onclick="openModal(this.src, 'Moreno', 'https://wa.me/2348122269422')" alt="Digital Illustration">
+        <div class="art-info">
+          <h4>Canvas Painting</h4>
+          <p>By Moreno</p>
+          <a href="https://wa.me/2348122269422" class="contact-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Message
+          </a>
+        </div>
+      </div>
+      <!-- Repeat for other projects -->
+      
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImg" alt="Artwork">
+  <div id="modalInfo" class="modal-info">
+    <h4 id="modalTitle"></h4>
+    <p id="modalArtist"></p>
+    <a id="modalContact" href="#" target="_blank" class="contact-btn">
+      <i class="fa-brands fa-whatsapp"></i> Message
+    </a>
+  </div>
+</div>
+
+
+<!-- IMAGE MODAL -->
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+  <div class="container">
+    <h2>Ready to get discovered for your creativity?</h2>
+    <p>Submit your artwork and let clients and recruiters connect with you directly.</p>
+    <a class="btn primary" href="https://wa.me/2348122269422?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20artwork.">Submit Your Artwork</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container footer-container">
+
+<p>© 2026 Artsok. All rights reserved.</p>
+
+<div class="socials">
+
+  <a href="https://wa.me/2348122269422?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20artwork." target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  
+  <a href="https://www.behance.net/gallery/245469223/Arthive-is-a-social-network-and-marketplace-for-artists?tracking_source=search_projects|artist&l=3" target="_blank">
+    <i class="fa-brands fa-behance"></i>
+  </a>
+  
+  <a href="https://dribbble.com/shots/27095545-Artist" target="_blank">
+    <i class="fa-brands fa-dribbble"></i>
+  </a>
+
+
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
