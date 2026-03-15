@@ -592,7 +592,7 @@ flex-direction:column;
 text-align:center;
 }
 
-/* Adjust spacing on mobile */ .f1 { left: 3%; } .f2 { left: 23%; } .f3 { left: 44%; } .f4 { left: 63%; } .f5 { left: 80%; }
+/* Adjust spacing on mobile */ .f1 { left: 1%; } .f2 { left: 20%; } .f3 { left: 42%; } .f4 { left: 61%; } .f5 { left: 75%; }
 .steps{
 grid-template-columns:1fr;
 }
@@ -611,7 +611,7 @@ height:110px;
 @media(max-width:480px){
 
 .hero h1{
-font-size:1.9rem;
+font-size:2.5rem;
 }
 
 .portfolio-grid{
